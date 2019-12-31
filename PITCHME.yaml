@@ -1,0 +1,16 @@
+background-size: cover
+
+transition: fade
+background-size : "98% 98%"
+footnote : "CyVerse - <a href='https://cyverse.org'>Learn More</a>"
+
+theme            : template
+theme-background : [ "#000000" ]
+theme-headline   : [ "montserrat", "#ffffff", "none" ]
+theme-byline     : [ "montserrat", "#ffffff", "none" ]
+theme-text       : [ "montserrat", "#ffffff", "transform" ]
+theme-links      : [ "#5289F7", "#5254F7" ]
+theme-controls   : [ "#484848" ]
+theme-margins    : [ "0", "15px" ]
+
+charts: true
