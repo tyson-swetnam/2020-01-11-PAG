@@ -1,26 +1,31 @@
 @startuml
-digraph G {
-  node [shape=record, fillcolor=lightgrey, style="filled,rounded"]
-  capture [label="Data Collection"]
-  capture -> analyze
-
-  subgraph cluster0 {
-    label = "Same as\nNetwork Capture Assessment"
-    labeljust = left
-    style = "filled,rounded"
-    color = deepskyblue
-    analyze [label="Endpoint and Flow Analysis"]
-    analyze:0 -> known:n
-    analyze:1 -> unknown:n
-    known [label="Known Protocol Analysis"]
-    unknown [label="Unknown Protocol Decode"]
+package data #FF00FF {
+  package raw_imagery #LightSkyBlue {
+      package flights #CCCCEE { 
+        class jpeg
+        class raw
+      }
+      package flights_logs #CCCCEE { 
+        class gpx
+        class csv
+      }
+    }
+  package rasters #LightGreen {
+      package elevation {
+        class tiff
+    }
+      package spectral #CCCCEE {
+        class cog-tiff
+        class hdf5
+    }
   }
-
-  known:s -> enum:0
-  unknown:s -> enum:1
-  enum [label="Elastic Search"]
-  fuzz [label="DOI"]
-  enum -> fuzz 
-
+  package pointclouds #CCCCEE {
+      package compressed {
+        class laz
+    }
+      package entwine {
+        class ept
+    }
+  }
 }
 @enduml
