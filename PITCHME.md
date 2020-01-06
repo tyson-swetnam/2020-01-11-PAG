@@ -8,7 +8,7 @@ The Airborne Environmental Observations Laboratory for Unoccupied Systems (AEOLU
 Image Credit: Manuel de Samaniego (circa 1800) Juno orders Aeolus to release the winds, image in the Public Domain
 @snapend
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[north span-100 text-08 text-blue font-montserrat]
 **Tyson L. Swetnam**
@@ -45,7 +45,7 @@ Research Scientist Battelle Inc.
 <img src="https://i1.rgstatic.net/ii/profile.image/273529623019520-1442225955799_Q512/David_Durden.jpg" height="200">
 @snapend
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[north-west span-55 text-yellow font-montserrat]
 the Greek name ‘_**Aeolus**_’, means _"**quick-moving, nimble,**"_ 
@@ -64,7 +64,8 @@ Our goals are to help manage the **VOLUME VARIETY VELOCITY & VERACITY** of big s
 @snapend
 
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
+
 @snap[north font-montserrat span-100 ]
 Vertical Data Integration Problems
 
@@ -74,14 +75,14 @@ Vertical Data Integration Problems
 credit: R Guralnick, et al. 
 @snapend
 
----?color=gray
+---?color=linear-gradient(80deg, black 10%, gray)
 
-<img src="/assets/imagery/cereus.png" height="600">
+<img src="/assets/imagery/cereus.png" height="700">
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
-@snap[east span-40 text-white fragment font-montserrat]
-@fa[quote-left quote-graphql](Why should I use this?)
+@snap[east span-40 text-white font-montserrat]
+@fa[quote-left quote-graphql](Why use AEOLUS?)
 <img src="https://polomania.hu/images/designs/tn_orig/PM01180/12639.png" height="180">
 @snapend
 
@@ -96,100 +97,40 @@ credit: R Guralnick, et al.
 
 @snap[south-east fragment span-40 font-montserrat]
 <img src="https://media.giphy.com/media/916t1VsCg2qoo/giphy.gif" height="100">
-@fa[text-06 font-montserrat](oh wait, it's FREE? )
+@fa[text-06 font-montserrat](oh wait, it's FREE*? )
 @snapend
 
----?color=linear-gradient(80deg, gray 10%, black)
 
-@snap[north-west span-100 text-14 text-bold font-montserrat]
-
-
-@snapend
-
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[west span-50 text-green font-montserrat]
-@css[](This talk **IS** for you if you are )
+@css[](This talk **IS** for you if you are: )
 @ol[text-white]
 - into vertical data integration research (i.e. _GxE_ )
 - interested in complex data processing pipelines
-- prefer a bespoke solution to a turn-key Vendor one
+- prefer a "bespoke solution" to a turn-key one
 @olend
 @snapend
 
 @snap[east span-50 text-yellow font-montserrat fragment]
 @css[](& if this talk **IS NOT** for you)
 @ol[text-orange fragment]
-- pretend you just got an important call, so you can leave
-- nod thoughtfully (to intimidate the others trying to understand this)
-- try to count the memes
+- pretend you just got an important call, get up and leave
+- nod thoughtfully (to intimidate others)
+- count memes
 @olend
 @snapend
 
----?color=linear-gradient(80deg, gray 10%, black)
 
-@snap[north span-100 font-montserrat] 
-Data Management Lifecycle
-@uml[](/src/uml/datamanagement.puml)
+---?color=linear-gradient(80deg, black 10%, gray)
+@snap[north span-100 font-montserrat text-yellow text-08]
+What I mean by a "bespoke solution" = **Interoperability**
+<img src="https://cdn.onebauer.media/one/empire-images/articles/5ae217aa9d981d6c2f774df3/choose-your-own-adventure.jpg">
 @snapend
 
-@snap[south-west span-33 fragment font-montserrat]
-Data Management Plan
-@snapend
-
-@snap[west span-33 fragment font-montserrat]
-Collection
-@snapend
-
-@snap[midpoint snap-33 fragment font-montserrat]
-QA/QC
-Metadata Indexing
-@snapend
-
-@snap[east span-33 fragment font-montserrat]
-Analysis
-@snapend
-
-@snap[south-east span-33 fragment font-montserrat]
-Digital Object Identifier (DOI) & Publication
-@snapend
-
-@snap[south span-33 fragment font-montserrat]
-Curation 
-Re-use
-@snapend
-
----?color=linear-gradient(80deg, gray 10%, black)
-
-@snap[north span-33 font-montserrat]
-Survey Says (n=33)
-@snapend
-
-@snap[west span-50 font-montserrat text-10]
-Do you know where you're going to publish your data?
-@snapend
-
-@snap[east span-50 font-montserrat text-10]
-Are your data public (yet)?
-@snapend
-
-@snap[south-west span-50 text-yellow font-montserrat text-10 text-center fragment]
-46% No
-53% Yes
-@snapend
-
-@snap[south-east span-50 text-yellow text-center font-montserrat text-08 fragment] 
-19% Yes 
-66% No - but we plan to
-13% No - we cannot afford to
-3% No - we aren't going to
-@snapend
-
----
-
-Data Processing
-
----
+---?color=linear-gradient(80deg, white 10%, gray)
+@snap[north text-black font-montserrat span-100]
+voluntary online survey mid-2019 (n=33)
 
 <canvas data-chart="bar">
 <!--
@@ -208,9 +149,9 @@ Data Processing
 }
 -->
 </canvas>
+@snapend
 
-
----?color=white
+---?color=linear-gradient(80deg, white 10%, gray)
 
 @snap[north-west span-66]
 <canvas data-chart="radar">
@@ -283,11 +224,10 @@ Data Processing
 </canvas>
 @snapend
 
-
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[north-west span-33]
-<img src="https://i.imgur.com/etrjhje.jpg" height="150">
+<img src="https://i.imgur.com/etrjhje.jpg" width="350">
 @snapend
 
 @snap[west span-33 fragment]
@@ -298,8 +238,8 @@ Data Processing
 @box[bg-orange text-white rounded box-padding](Con # Training, $$$ floating licenses)
 @snapend
 
-@snap[north span-33]
-<img src="https://images.ctfassets.net/go54bjdzbrgi/1ingG3f6HsI6i2qIuYe2cc/f0b4a12cb3a7ba6df067577009d32c3f/Pix4D_LOGO_MAIN_1024.png" height="200">
+@snap[north span-33 align-top]
+<img src="https://images.ctfassets.net/go54bjdzbrgi/1ingG3f6HsI6i2qIuYe2cc/f0b4a12cb3a7ba6df067577009d32c3f/Pix4D_LOGO_MAIN_1024.png" width="250">
 @snapend
 
 @snap[midpoint span-33 fragment]
@@ -311,7 +251,7 @@ Data Processing
 @snapend
 
 @snap[north-east]
-<img src="https://pbs.twimg.com/profile_images/578011545969389568/qrV14aGg.png" height="150">
+<img src="https://pbs.twimg.com/profile_images/578011545969389568/qrV14aGg.png" width="200">
 @snapend
 
 @snap[east span-33 fragment]
@@ -322,7 +262,7 @@ Data Processing
 @box[bg-orange text-white rounded box-padding](Con # less accurate, less scalable)
 @snapend
 
----
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[west h3-white span-50]
 ### @fa[twitter] a recent informal survey of community members
@@ -332,22 +272,22 @@ Data Processing
   @tweet[https://twitter.com/tommaso_jucker/status/1189847902673342464]
 @snapend
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[east span-40 text-white]
-@fa[quote-left quote-graphql](Why do I need to process sUAS data on cloud or HPC?)
+@fa[quote-left quote-graphql](Why process data on cloud or HPC?)
 <img src="https://polomania.hu/images/designs/tn_orig/PM01180/12639.png" height="200">
 @snapend
 
-@snap[north-west span-40 fragment text-white font-montserrat]
-@box[](Reason 1. Time @fa[hourglass] our most valuable resource # Have you ever attempted a SfM-MVS reconstruction of 10,000+ 20 megapixel images?)
+@snap[north-west span-50 fragment text-white font-montserrat]
+@box[](Reason 1. Time @fa[hourglass] our most valuable resource # Ever attempt a SfM-MVS reconstruction of 10,000+ 20 megapixel images?)
 @snapend
 
-@snap[south-west span-40 fragment text-white font-montserrat]
+@snap[south-west span-50 fragment text-white font-montserrat]
 @box[](Reason 2. Scale Limitation # You fly a sUAS every _n_ (day, week, month) across _X_ (plots, fields, sites))
 @snapend
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[east span-50 text-white]
 @fa[quote-left quote-graphql](Cloud & HPC in three _EASY_ steps)
@@ -370,10 +310,9 @@ Data Processing
 <img src="https://media.giphy.com/media/3oriNNwSR4ET5zd0xq/giphy.gif" height="300">
 @snapend
 
+---?color=linear-gradient(80deg, black 10%, gray) 
 
----?color=linear-gradient(80deg, gray 10%, black)
-
-<img src="assets/imagery/metashape_hpc.png" width= "900">
+<img src="assets/imagery/metashape_hpc.png" width= "1000">
 
 ---?color=linear-gradient(80deg, gray 10%, black)
 
@@ -415,7 +354,11 @@ Explanation via a 1980s cartoon
 
 ---?image=assets/imagery/agisoft_network.png
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, white 10%, gray)
+
+@snap[north-west span-50 text-black]
+Cost of computing
+@snapend
 
 <canvas data-chart="bar">
 <!--
@@ -426,13 +369,11 @@ Explanation via a 1980s cartoon
    {
     "data":[4,16,28,96,64],
     "label":"CPU Cores",
-    "borderColor":"#FFFFFF",
     "backgroundColor":"green"
    },
    {
     "data":[16,128,168,256,256],
     "label":"CPU RAM (GB)",
-    "borderColor": "#0f0",
     "backgroundColor":"rgba(120,120,220,.8)"
    }
   ]
@@ -448,13 +389,72 @@ node = $4.35 / hr
 100 nodes = $435.20 / hr
 @snapend
 
----
+---?color=linear-gradient(80deg, black 10%, gray)
+
+@snap[north span-100 font-montserrat] 
+Data Management Lifecycle
+@uml[](/src/uml/datamanagement.puml)
+@snapend
+
+@snap[south-west span-33 fragment font-montserrat]
+Data Management Plan
+@snapend
+
+@snap[west span-33 fragment font-montserrat]
+Collection
+@snapend
+
+@snap[midpoint snap-33 fragment font-montserrat]
+QA/QC
+Metadata Indexing
+@snapend
+
+@snap[east span-33 fragment font-montserrat]
+Analysis
+@snapend
+
+@snap[south-east span-33 fragment font-montserrat]
+Digital Object Identifier (DOI) & Publication
+@snapend
+
+@snap[south span-33 fragment font-montserrat]
+Curation 
+Re-use
+@snapend
+
+---?color=linear-gradient(80deg, black 10%, gray)
+
+@snap[north span-33 font-montserrat]
+Survey Says (n=33)
+@snapend
+
+@snap[west span-50 font-montserrat text-10]
+Do you know where you're going to publish your data?
+@snapend
+
+@snap[east span-50 font-montserrat text-10]
+Are your data public (yet)?
+@snapend
+
+@snap[south-west span-50 text-yellow font-montserrat text-10 text-center fragment]
+46% No
+53% Yes
+@snapend
+
+@snap[south-east span-50 text-yellow text-center font-montserrat text-08 fragment] 
+19% Yes 
+66% No - but we plan to
+13% No - we cannot afford to
+3% No - we aren't going to
+@snapend
+
+---?color=linear-gradient(80deg, black 10%, gray)
 
 ## Publishing your Data
 
 ---?image=/assets/imagery/gillan_etal.png
 
----
+---?color=linear-gradient(80deg, black 10%, gray)
 
 Bring your research to CyVerse
 
@@ -462,7 +462,7 @@ Bring your research to CyVerse
 
 Calliope Slides
 
----?color=linear-gradient(80deg, gray 10%, black)
+---?color=linear-gradient(80deg, black 10%, gray)
 
 @snap[east span-40 text-white font-montserrat]
 @fa[quote-left quote-graphql](Why use CyVerse or XSEDE?)
@@ -551,7 +551,7 @@ Sign up for an [XSEDE Portal Account](https://portal.xsede.org/)
 
 Acknowledgements
 
-All images shown this presentation are available in the public domain or are the property of their creators. Their web addresses are visible in the source code of this presentation at: https://github.com/tyson-swetnam/2020-01-11-PAG/
+All images shown in this presentation are in the public domain or are property of their credited creators. The web address of each image is visible in the presentation at: https://github.com/tyson-swetnam/2020-01-11-PAG/
 
 ---?color=linear-gradient(80deg, black, #567AD2)
 
