@@ -577,7 +577,7 @@ Calliope Slides
 ---?color=linear-gradient(80deg, gray 10%, black)
 
 @snap[north span-100]
-[![GRAPHQL](/assets/imagery/cyverse_white.png)](https://cyverse.org)
+<img src="/assets/imagery/cyverse_white.png" height="100">
 @snapend
 
 @snap[west span-33 text-white]
