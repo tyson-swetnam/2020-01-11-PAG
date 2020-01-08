@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost:9000/gitpitch/desktop#/6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>GitPitch Desktop</title>
+    <meta content="The Markdown Presentation Service on Git." name="description">
+    <meta content="Markdown, Presentation, GitHub, GitLab, Bitbucket, PITCHME" name="keywords">
+    
+    <meta content="template" name="gitpitch">
+    
+    
+<link href="./GitPitch Desktop_files/reveal.css" rel="stylesheet" type="text/css">
+
+
+<link href="./GitPitch Desktop_files/template.css" rel="stylesheet" type="text/css">
+
+<link href="./GitPitch Desktop_files/PITCHME.template.css" rel="stylesheet" type="text/css" id="theme">
+
+<link href="./GitPitch Desktop_files/title-footer-mod.css" rel="stylesheet" type="text/css" id="theme">
+
+<link href="./GitPitch Desktop_files/paper.css" rel="stylesheet" type="text/css">
+
+
+<link href="./GitPitch Desktop_files/hybrid.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/octicons.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/fa-all.min.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/fa-v4-shims.min.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/twitter.min.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/asciinema-player.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/pitchcore.css" rel="stylesheet" type="text/css">
+
+
+
+
+<link href="./GitPitch Desktop_files/pitch.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/pitchmenu.css" rel="stylesheet" type="text/css">
+
+
+<link href="./GitPitch Desktop_files/pitchbarlight.css" rel="stylesheet" type="text/css">
+
+
+<link href="./GitPitch Desktop_files/pitchcode.css" rel="stylesheet" type="text/css">
+<link href="./GitPitch Desktop_files/pitchpro.css" rel="stylesheet" type="text/css">
+
+    
+
+
+    
+    
+<script>
+if ("WebSocket" in window) {
+
+    var ws = new WebSocket("ws://localhost:9000/pitchme/watch");
+
+    ws.onopen = function() { };
+    ws.onmessage = function (evt) {
+        var received_msg = evt.data;
+        location.reload(false);
+    };
+
+    ws.onclose = function() {
+    };
+
+    window.onbeforeunload = function(event) {
+    };
+} else {
+    // The browser doesn't support WebSocket
+    console.log("GitPitch Desktop auto-reload disabled [no websockets].");
+}
+</script>
+
+    
+    <link href="./GitPitch Desktop_files/pitchpost.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="./GitPitch Desktop_files/marked.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/markdown.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/Chart.min.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/csv2chart.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/menu-mod.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/notes.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/highlight.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/reveal-code-focus-0619-mod.js"></script><script type="text/javascript" src="./GitPitch Desktop_files/twitter-embed-widgets.js"></script>
+    
+<link rel="stylesheet" href="./GitPitch Desktop_files/menu-mod.css"><script charset="utf-8" src="./GitPitch Desktop_files/moment_timeline_tweet.6e5b62723488aee38af0c77681396a5b.js"></script><script charset="utf-8" src="./GitPitch Desktop_files/tweet.2b7769d244a8dfeb3ab9d97583412dec.js"></script></head>
+<body>
+    
+
+
+    <div class="reveal fade center has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="fade" style="">
+        <div class="slides" style="width: 960px; height: 700px; zoom: 1.05286;">
+            
+            <section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background-image="https://www.greeklegendsandmyths.com/uploads/5/3/1/3/53133595/manuel-samaniego-y-jaramillo-air-juno-orders-aeolus-to-release-the-winds-1800_orig.jpg" data-background-size="98% 98%" data-background-position="center" data-background=" " data-background-repeat=" " data-background-transition="fade" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="midpoint span-100 text-center text-white text-16 text-bold text-monserrat">
+
+<p>The Airborne Environmental Observations Laboratory for Unoccupied Systems (AEOLUS)</p>
+
+
+</div>
+
+<div class="south-west span-100 text-center text-03 text-white">
+
+<p>Image Credit: Manuel de Samaniego (circa 1800) Juno orders Aeolus to release the winds, image in the Public Domain</p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="north span-100 text-08 text-blue font-montserrat">
+
+<p><strong>Tyson L. Swetnam</strong></p>
+
+<p>Research Assistant Professor, BIO5 Institute University of Arizona (UA), CyVerse</p>
+
+
+<p><strong>Co-Authors</strong></p>
+
+
+</div>
+
+<div class="west span-35 text-08 text-blue font-montserrat">
+
+<p><strong>David S. LeBauer</strong></p>
+
+<p>Director of Data Science, Agricultural Experiment Station UA</p>
+
+
+</div>
+
+<div class="south-west span-33">
+
+<img src="./GitPitch Desktop_files/david_lebauer.jpg" height="200">
+
+</div>
+
+<div class="midpoint span-33 text-08 text-yellow font-montserrat">
+
+<p><strong>Jane Wyngaard</strong></p>
+
+<p>Systems Engineer, University of Notre Dame - <a href="https://github.com/r4space/LANDRS" rel="noopener noreferrer" target="_blank">LANDRS</a></p>
+
+
+</div>
+
+<div class="south span-33">
+
+<img src="./GitPitch Desktop_files/jw.resized.JPG" height="200">
+
+</div>
+
+<div class="east span-33 text-08 text-orange font-montserrat">
+
+<p><strong>David J. Durden</strong></p>
+
+<p>Research Scientist Battelle Inc.</p>
+
+<p><a href="https://www.neonscience.org/" rel="noopener noreferrer" target="_blank">NEON</a></p>
+
+
+</div>
+
+<div class="south-east span-33">
+
+<img src="./GitPitch Desktop_files/David_Durden.jpg" height="200">
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="north-west span-55 text-yellow font-montserrat">
+
+<p>the Greek name ‘<em><strong>Aeolus</strong></em>’, means <em>"<strong>quick-moving, nimble,</strong>"</em></p>
+
+
+</div>
+
+<div class="midpoint span-100 text-yellow font-montserrat">
+
+<p>in mythology he was the <em>“<strong>Keeper of the Winds, king of the floating island of Aeolia</strong>”</em></p>
+
+
+</div>
+
+<div class="north-east span-50">
+
+<img src="./GitPitch Desktop_files/giphy.gif" height="250">
+
+</div>
+
+<div class="south span-100 text-green fragment font-montserrat visible" data-fragment-index="0">
+
+<p>Our goals are to help manage the <strong>VOLUME VARIETY VELOCITY &amp; VERACITY</strong> of big sUAS data generated by the research community in the cloud-computing realm.</p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="north font-montserrat span-100">
+
+<p>Vertical Data Integration Problems</p>
+
+
+<img src="./GitPitch Desktop_files/hdr_low.png" height="600">
+
+<div class="south-east span-25 font-montserrat text-05 text-white">
+
+<p>credit: R Guralnick, et al.</p>
+
+
+</div>
+
+</div></section><section data-charset="utf-8" style="top: 0px; display: block;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, white 10%, black)" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="north span-100 font-montserrat">
+
+<p>Taking science to the edge</p>
+
+
+</div>
+
+<p><img src="./GitPitch Desktop_files/cereus.png" height="700"></p>
+</section><section data-charset="utf-8" style="top: 330px; display: block;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, white 10%, black)" hidden="" aria-hidden="true" class="past"><!-- -->
+<div class="east span-33 text-white font-montserrat">
+
+<p><i class="fa fa-quote-left quote-graphql" aria-hidden="true"> Why interoperability and federation?</i></p>
+
+<img src="./GitPitch Desktop_files/12639.png" height="100">
+
+</div>
+
+<div class="north-west span-33">
+
+<img src="./GitPitch Desktop_files/landrs-logo-full_md.png" height="100">
+
+</div>
+
+<div class="west span-100">
+
+<img src="./GitPitch Desktop_files/landrs_diagram.png" height="500">
+
+</div>
+
+<div class="south-west span-100 text-06 font-montserrat">
+
+<img src="./GitPitch Desktop_files/1200px-Alfred_P._Sloan_Foundation_stacked_logo.svg.png" height="100">
+
+</div>
+
+<div class="south-east span-100 text-06 font-montserrat">
+
+<p><a href="http://www.landrs.org/" rel="noopener noreferrer" target="_blank">http://www.landrs.org/</a></p>
+
+
+</div>
+
+
+</section><section data-charset="utf-8" style="top: 330px; display: block;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" class="present"><!-- -->
+<div class="north-west span-50">
+
+<img src="./GitPitch Desktop_files/wyngaard_2019.png" height="600">
+
+</div>
+
+<div class="east span-33 text-white font-montserrat">
+
+<p><i class="fa fa-quote-left quote-graphql" aria-hidden="true"> Why interoperability and federation?</i></p>
+
+<img src="./GitPitch Desktop_files/12639.png" height="100">
+
+</div>
+
+<div class="south-east span-66 font-montserrat text-06">
+
+<img src="./GitPitch Desktop_files/jw.resized.JPG" height="200">
+<p>Emergent Challenges for Science sUAS Data Management: Fairness through Community Engagement and Best Practices Development</p>
+
+<p>Wyngaard et al. Remote Sens. 2019, 11(15), 1797; <a href="https://doi.org/10.3390/rs11151797" rel="noopener noreferrer" target="_blank">https://doi.org/10.3390/rs11151797</a></p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 330px; display: block;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="east span-33 text-white font-montserrat">
+
+<p><i class="fa fa-quote-left quote-graphql" aria-hidden="true"> Why interoperability and federation?</i></p>
+
+<img src="./GitPitch Desktop_files/12639.png" height="100">
+
+</div>
+
+<div class="north-west span-80">
+
+<img src="./GitPitch Desktop_files/image13.png" height="380">
+
+</div>
+
+<div class="south-west span-80">
+
+<img src="./GitPitch Desktop_files/image9.png" height="218">
+
+</div>
+
+<div class="north-east span-33 text-04 font-montserrat">
+
+<p>Time: Sunday 08:25 AM</p>
+
+<p>Session: Systems Biology and Ontologies</p>
+
+<p>Location: Royal Palm Salon 3-4</p>
+
+<p>Anne Thessen</p>
+
+
+</div>
+
+<div class="south-east span-33 text-06 font-montserrat">
+
+<a href="https://www.nsf.gov/" rel="noopener noreferrer" target="_blank"><img class="span-25" src="./GitPitch Desktop_files/NSF_4-Color_bitmap_Logo.png"></a> HDR Award 194033
+<p><a href="https://genophenoenvo.github.io/" rel="noopener noreferrer" target="_blank">https://genophenoenvo.github.io/</a></p>
+
+
+</div>
+
+
+
+</section><section data-charset="utf-8" style="top: 330px; display: block;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="east span-40 text-white font-montserrat">
+
+<p><i class="fa fa-quote-left quote-graphql" aria-hidden="true"> Why do we need an AEOLUS?</i></p>
+
+<img src="./GitPitch Desktop_files/12639.png" height="180">
+
+</div>
+
+<div class="north-west span-40 fragment text-white fragment text-center font-montserrat" data-fragment-index="0">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Rational 1: <i class="fa fa-hourglass" aria-hidden="true"> </i> = $$$</span></div><p id="boxed-text">dozens of turn key solutions</p></div>
+<p><i class="fa fa-ban" aria-hidden="true"> </i></p>
+
+
+
+</div>
+
+<div class="south-west span-40 fragment text-white font-montserrat text-center" data-fragment-index="1">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Rational 2. we're broke $$$</span></div><p id="boxed-text">but we've got talent!</p></div>
+<p>✔</p>
+
+
+</div>
+
+<div class="south-east fragment span-40 align-center font-montserrat" data-fragment-index="2">
+
+<img src="./GitPitch Desktop_files/giphy(1).gif" height="100">
+<p><i class="fa fa-text-06" aria-hidden="true"> oh wait, it's FREE*? </i></p>
+
+
+</div>
+
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="west span-50 text-green font-montserrat">
+
+<p><span class="">This talk <strong>IS</strong> for you if you are: </span></p>
+
+
+
+
+
+<ul class="text-white">
+<li class="fragment" data-fragment-index="0">into vertical data integration research (i.e. <em>GxE</em> )</li>
+<li class="fragment" data-fragment-index="1">interested in complex data processing pipelines</li>
+<li class="fragment" data-fragment-index="2">prefer a "bespoke solution" to a turn-key one</li>
+</ul>
+
+
+</div>
+
+<div class="east span-50 text-yellow font-montserrat fragment" data-fragment-index="3">
+
+<p><span class="">&amp; if this talk <strong>IS NOT</strong> for you</span></p>
+
+
+
+
+
+<ul class="text-orange fragment" data-fragment-index="4">
+<li class="fragment" data-fragment-index="5">pretend you just got an important call, get up and leave</li>
+<li class="fragment" data-fragment-index="6">nod thoughtfully (to intimidate others)</li>
+<li class="fragment" data-fragment-index="7">count memes</li>
+</ul>
+
+
+</div>
+
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north span-100 font-montserrat text-yellow text-08">
+
+<p>What I mean by a "bespoke solution" = <strong>Interoperability</strong></p>
+
+<img src="./GitPitch Desktop_files/choose-your-own-adventure.jpg">
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, white 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north text-black font-montserrat span-100"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./GitPitch Desktop_files/saved_resource.html"></iframe>
+
+<p>voluntary online survey mid-2019 (n=33)</p>
+
+
+<canvas data-chart="bar" height="0" width="0" style="display: block; width: 0px; height: 0px;">
+<!--
+{
+ "data": {
+  "labels": ["Agriculture", "Archaeology"," Ecology","Engineering","Geosciences", "Survey, Media, Other"],
+  "datasets": [
+   {
+    "data":[6,1,11,1,13,1],
+    "label":"community",
+    "backgroundColor":"green"
+   }
+  ]
+ },
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, white 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north-west span-66"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./GitPitch Desktop_files/saved_resource(1).html"></iframe>
+
+<canvas data-chart="radar" height="0" width="0" style="display: block; width: 0px; height: 0px;">
+<!--
+{
+ "data": {
+  "labels": ["locally","server","cloud","private", "govt"],
+  "datasets": [
+   {
+    "data":[24,19,14,5,2],
+    "label":"Storage",
+    "backgroundColor":"rgba(240,160,80,.6)"
+   }
+  ]
+ },
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+</div>
+
+<div class="north-east span-66"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./GitPitch Desktop_files/saved_resource(2).html"></iframe>
+
+<canvas data-chart="radar" height="0" width="0" style="display: block; width: 0px; height: 0px;">
+<!--
+{
+ "data": {
+  "labels": ["locally","server","cloud","private","hpc"],
+  "datasets": [
+   {
+    "data":[25,13,8,5,11],
+    "label":"Processing",
+    "backgroundColor":"rgba(240,160,80,.6)"
+   }
+  ]
+ },
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+</div>
+
+
+<div class="south span-66"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./GitPitch Desktop_files/saved_resource(3).html"></iframe>
+
+<canvas data-chart="radar" height="0" width="0" style="display: block; width: 0px; height: 0px;">
+<!--
+{
+ "data": {
+  "labels": ["storage","sharing","processing","findability","access"],
+  "datasets": [
+   {
+    "data":[6,8,15,5,10],
+    "label":"Major",
+    "backgroundColor":"rgba(80,160,240,.6)"
+   },
+  {
+    "data":[12,12,10,10,7],
+    "label":"Priority",
+    "backgroundColor":"rgba(240,160,80,.6)"
+   },
+     {
+    "data":[10,6,4,10,8],
+    "label":"Least Concern",
+    "backgroundColor":"red"
+   }
+  ]
+ },
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north-west span-33">
+
+<img src="./GitPitch Desktop_files/etrjhje.jpg" width="350">
+
+</div>
+
+<div class="west span-33 fragment" data-fragment-index="0">
+
+<div id="boxed-text-box" class="bg-green text-white rounded box-padding"><div id="boxed-text-title-box"><span id="boxed-text-title">Pro</span></div><p id="boxed-text">Widely Used, Network &amp; HPC</p></div>
+
+<p></p></div><p></p>
+<div class="south-west span-33 fragment" data-fragment-index="1">
+
+<div id="boxed-text-box" class="bg-orange text-white rounded box-padding"><div id="boxed-text-title-box"><span id="boxed-text-title">Con</span></div><p id="boxed-text">Training, $$$ floating licenses</p></div>
+
+<p></p></div><p></p>
+<div class="north span-33 align-top">
+
+<img src="./GitPitch Desktop_files/Pix4D_LOGO_MAIN_1024.png" width="250">
+
+</div>
+
+<div class="midpoint span-33 fragment" data-fragment-index="2">
+
+<div id="boxed-text-box" class="bg-green text-white rounded box-padding"><div id="boxed-text-title-box"><span id="boxed-text-title">Pro</span></div><p id="boxed-text">Ready to use, ESRI integration</p></div>
+
+<p></p></div><p></p>
+<div class="south span-33 fragment" data-fragment-index="3">
+
+<div id="boxed-text-box" class="bg-orange text-white rounded box-padding"><div id="boxed-text-title-box"><span id="boxed-text-title">Con</span></div><p id="boxed-text">less scalable, $$$ for Cloud</p></div>
+
+<p></p></div><p></p>
+<div class="north-east">
+
+<img src="./GitPitch Desktop_files/qrV14aGg.png" width="200">
+
+</div>
+
+<div class="east span-33 fragment" data-fragment-index="4">
+
+<div id="boxed-text-box" class="bg-green text-white rounded box-padding"><div id="boxed-text-title-box"><span id="boxed-text-title">Pro</span></div><p id="boxed-text">Free, nice interface</p></div>
+
+<p></p></div><p></p>
+<div class="south-east span-33 fragment" data-fragment-index="5">
+
+<div id="boxed-text-box" class="bg-orange text-white rounded box-padding"><div id="boxed-text-title-box"><span id="boxed-text-title">Con</span></div><p id="boxed-text">less accurate, less scalable</p></div>
+
+<p></p></div><p></p>
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="west h3-white span-50">
+
+<h3><i class="fa fa-twitter" aria-hidden="true"> </i> a recent informal survey of community members</h3>
+
+
+</div>
+
+<div class="east span-50">
+
+<twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="1189847902673342464"></twitter-widget>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="east span-40 text-white">
+
+<p><i class="fa fa-quote-left quote-graphql" aria-hidden="true"> Why process data on cloud or HPC?</i></p>
+
+<img src="./GitPitch Desktop_files/12639.png" height="200">
+
+</div>
+
+<div class="north-west span-50 fragment text-white font-montserrat" data-fragment-index="0">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Reason 1. Time <i class="fa fa-hourglass" aria-hidden="true"> </i> our most valuable resource</span></div><p id="boxed-text">Ever attempt a SfM-MVS reconstruction of 10,000+ 20 megapixel images?</p></div>
+
+<p></p></div><p></p>
+<div class="south-west span-50 fragment text-white font-montserrat" data-fragment-index="1">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Reason 2. Scale Limitation</span></div><p id="boxed-text">You fly a sUAS every <em>n</em> (day, week, month) across <em>X</em> (plots, fields, sites)</p></div>
+
+<p></p></div><p></p>
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="east span-50 text-white">
+
+<p><i class="fa fa-quote-left quote-graphql" aria-hidden="true"> Cloud &amp; HPC in three <em>EASY</em> steps</i></p>
+
+
+</div>
+
+<div class="north-west span-40 fragment text-white font-montserrat" data-fragment-index="0">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Step 1.</span></div><p id="boxed-text">Log into your cloud or HPC Account</p></div>
+
+<p></p></div><p></p>
+<div class="west span-40 fragment text-white font-montserrat" data-fragment-index="1">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Step 2.</span></div><p id="boxed-text">Get some cores</p></div>
+
+<p></p></div><p></p>
+<div class="south-west span-40 fragment text-white font-montserrat" data-fragment-index="2">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Step 3.</span></div><p id="boxed-text">Start your analysis!</p></div>
+
+<p></p></div><p></p>
+<div class="north-east fragment span-50" data-fragment-index="3">
+
+<p><i class="fa fa-text-06 font-montserrat" aria-hidden="true"> <strong>Narrator Voice</strong>: It was not "<em>EASY</em> "</i></p>
+
+<img src="./GitPitch Desktop_files/giphy(2).gif" height="300">
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, white 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<p><img src="./GitPitch Desktop_files/metashape_hpc.png" width="1000"></p>
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, gray 10%, black)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north-west fragment span-40 font-montserrat text-05" data-fragment-index="0">
+
+<p><span class="">Start Graphic User Interface</span></p>
+
+<img src="./GitPitch Desktop_files/giphy(3).gif" height="150">
+
+</div>
+
+<div class="east fragment span-40 font-montserrat text text-05" data-fragment-index="1">
+
+<p><span class="">Create project - load images </span></p>
+
+<img src="./GitPitch Desktop_files/giphy(4).gif" height="150">
+
+</div>
+
+<div class="north-east fragment span-40 font-montserrat text-05" data-fragment-index="2">
+
+<p><span class="">Request Worker Nodes</span></p>
+
+<img src="./GitPitch Desktop_files/giphy(5).gif" height="150">
+
+</div>
+
+<div class="west fragment span-40 font-montserrat text-05" data-fragment-index="3">
+
+<p><span class="">Load Singularity module</span></p>
+
+<img src="./GitPitch Desktop_files/giphy(6).gif" height="150">
+
+</div>
+
+<div class="north fragment span-40 font-montserrat text-05" data-fragment-index="4">
+
+<p><span class="">Start Network Monitor</span></p>
+
+<img src="./GitPitch Desktop_files/giphy(7).gif" height="150">
+
+</div>
+
+<div class="midpoint fragment span-40 font-montserrat text-05" data-fragment-index="5">
+
+<img src="./GitPitch Desktop_files/giphy(8).gif" height="250">
+<p><span class="">Connect Server Node</span></p>
+
+
+</div>
+
+<div class="south span-100 text-08 font-montserrat ">
+
+
+<p>Explanation via a 1980s cartoon</p>
+
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background-image="http://localhost:9000/pitchme/cdn/desktop/gitpitch/desktop/master/assets/imagery/agisoft_network.png" data-background-size="98% 98%" data-background-position="center" data-background=" " data-background-repeat=" " data-background-transition="fade" hidden="" aria-hidden="true" class="future"><!-- -->
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, white 10%, gray)" hidden="" aria-hidden="true" class="future"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;" src="./GitPitch Desktop_files/saved_resource(4).html"></iframe><!-- -->
+<div class="north-west span-50 text-black">
+
+<p>Cost of computing</p>
+
+
+</div>
+
+<canvas data-chart="bar" height="0" width="0" style="display: block; width: 0px; height: 0px;">
+<!--
+{
+ "data": {
+  "labels": ["Your Laptop", "Workstation", "older HPC","newish HPC", " AWS EC2 g4dn.16xlarge"],
+  "datasets": [
+   {
+    "data":[4,16,28,96,64],
+    "label":"CPU Cores",
+    "backgroundColor":"green"
+   },
+   {
+    "data":[16,128,168,256,256],
+    "label":"CPU RAM (GB)",
+    "backgroundColor":"rgba(120,120,220,.8)"
+   }
+  ]
+ },
+ "options": { "responsive": "true" }
+}
+-->
+</canvas>
+
+<div class="north-east fragment font-montserrat text-06" data-fragment-index="0">
+
+<p>node = $4.35 / hr</p>
+
+<p>10 nodes = $43.52 / hr</p>
+
+<p>100 nodes = $435.20 / hr</p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north span-100 font-montserrat">
+
+<p>Data Management Lifecycle</p>
+
+<img class="" src="./GitPitch Desktop_files/datamanagement.svg">
+
+</div>
+
+<div class="south-west span-33 fragment font-montserrat" data-fragment-index="0">
+
+<p>Data Management Plan</p>
+
+
+</div>
+
+<div class="west span-33 fragment font-montserrat" data-fragment-index="1">
+
+<p>Collection</p>
+
+
+</div>
+
+<div class="midpoint snap-33 fragment font-montserrat" data-fragment-index="2">
+
+<p>QA/QC</p>
+
+<p>Metadata Indexing</p>
+
+
+</div>
+
+<div class="east span-33 fragment font-montserrat" data-fragment-index="3">
+
+<p>Analysis</p>
+
+
+</div>
+
+<div class="south-east span-33 fragment font-montserrat" data-fragment-index="4">
+
+<p>Digital Object Identifier (DOI) &amp; Publication</p>
+
+
+</div>
+
+<div class="south span-33 fragment font-montserrat" data-fragment-index="5">
+
+<p>Curation</p>
+
+<p>Re-use</p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north span-33 font-montserrat">
+
+<p>Survey Says (n=33)</p>
+
+
+</div>
+
+<div class="west span-50 font-montserrat text-10">
+
+<p>Do you know where you're going to publish your data?</p>
+
+
+</div>
+
+<div class="east span-50 font-montserrat text-10">
+
+<p>Are your data public (yet)?</p>
+
+
+</div>
+
+<div class="south-west span-50 text-yellow font-montserrat text-10 text-center fragment" data-fragment-index="0">
+
+<p>46% No</p>
+
+<p>53% Yes</p>
+
+
+</div>
+
+<div class="south-east span-50 text-yellow text-center font-montserrat text-08 fragment" data-fragment-index="1">
+
+<p>19% Yes</p>
+
+<p>66% No - but we plan to</p>
+
+<p>13% No - we cannot afford to</p>
+
+<p>3% No - we aren't going to</p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<h2 id="publishing-your-data">Publishing your Data</h2>
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background-image="http://localhost:9000/pitchme/cdn/desktop/gitpitch/desktop/master//assets/imagery/gillan_etal.png" data-background-size="98% 98%" data-background-position="center" data-background=" " data-background-repeat=" " data-background-transition="fade" hidden="" aria-hidden="true" class="future"><!-- -->
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<p>Bring your research to CyVerse</p>
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="future"><p>Calliope Slides</p>
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black 10%, gray)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="east span-40 text-white font-montserrat">
+
+<p><i class="fa fa-quote-left quote-graphql" aria-hidden="true"> Why use CyVerse or XSEDE?</i></p>
+
+<img src="./GitPitch Desktop_files/12639.png" height="180">
+
+</div>
+
+<div class="north-west span-40 fragment text-white font-montserrat" data-fragment-index="0">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Reason 1. Computer <i class="fa fa-hourglass" aria-hidden="true"> </i> and data storage cost $$$$</span></div><p id="boxed-text">Do you host web services on AWS, or data on S3?</p></div>
+
+<p></p></div><p></p>
+<div class="south-west span-40 fragment text-white font-montserrat" data-fragment-index="1">
+
+<div id="boxed-text-box" class=""><div id="boxed-text-title-box"><span id="boxed-text-title">Reason 2. Location-Location-Location</span></div><p id="boxed-text">Put your data in the same place that you intend to do work on them</p></div>
+
+<p></p></div><p></p>
+<div class="south-east fragment span-40" data-fragment-index="2">
+
+<img src="./GitPitch Desktop_files/giphy(1).gif" height="100">
+<p><i class="fa fa-text-06 font-montserrat" aria-hidden="true"> oh, &amp; it's FREE</i></p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, gray 10%, black)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north span-100">
+
+<p><a href="https://cyverse.org/" rel="noopener noreferrer" target="_blank"><img src="./GitPitch Desktop_files/cyverse_white.png" alt="GRAPHQL"></a></p>
+
+
+</div>
+
+<div class="west span-33 text-white">
+
+<div id="boxed-text-box" class=""><p id="boxed-text">Data Store</p></div>
+
+
+
+
+<ul class="text-08">
+<li class="fragment" data-fragment-index="0">Host up to 10TB</li>
+<li class="fragment" data-fragment-index="1">Cloud Storage</li>
+<li class="fragment" data-fragment-index="2">Share with colleagues</li>
+</ul>
+
+
+<p></p></div><p></p>
+<div class="midpoint span-33 text-white">
+
+<div id="boxed-text-box" class=""><p id="boxed-text">Discovery Environment</p></div>
+
+
+
+
+<ul class="text-08">
+<li class="fragment" data-fragment-index="3">RStudio &amp; Jupyter Notebooks</li>
+<li class="fragment" data-fragment-index="4">Share Analyses</li>
+<li class="fragment" data-fragment-index="5">Batch Processing</li>
+</ul>
+
+
+<p></p></div><p></p>
+<div class="east span-33 text-white">
+
+<div id="boxed-text-box" class=""><p id="boxed-text">Cloud Native Services</p></div>
+
+
+
+
+<ul class="text-08">
+<li class="fragment" data-fragment-index="6">Virtual Machines</li>
+<li class="fragment" data-fragment-index="7">Run Jobs</li>
+<li class="fragment" data-fragment-index="8">Run Services</li>
+</ul>
+
+
+<p></p></div><p></p>
+<div class="south span-100">
+
+<p><a href="https://user.cyverse.org/" rel="noopener noreferrer" target="_blank">Sign up here</a></p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, gray 10%, black)" hidden="" aria-hidden="true" class="future"><!-- -->
+<div class="north-west span-50">
+
+<a href="https://www.xsede.org/" rel="noopener noreferrer" target="_blank"><img class="span-100" src="./GitPitch Desktop_files/layout_set_logo"></a> 
+
+</div>
+
+<div class="north-east span-50">
+
+<a href="https://opensciencegrid.org/" rel="noopener noreferrer" target="_blank"><img class="span-75" src="./GitPitch Desktop_files/osg_logo.png"></a>
+
+</div>
+
+<div class="west span-50 text-white">
+
+<a href="https://www.tacc.utexas.edu/use-tacc/getting-started" rel="noopener noreferrer" target="_blank"><img class="" src="./GitPitch Desktop_files/2018-Frontera_black.png"></a>
+<a href="https://www.tacc.utexas.edu/" rel="noopener noreferrer" target="_blank"><img class="" src="./GitPitch Desktop_files/tacc.png"></a>
+
+</div>
+
+<div class="east span-50 text-white">
+
+<div id="boxed-text-box" class=""><p id="boxed-text">High Throughput Computing</p></div>
+
+
+<ul class="text-08">
+<li class="fragment" data-fragment-index="0">Run Jobs from CyVerse</li>
+</ul>
+
+
+<p></p></div><p></p>
+<div class="south span-100">
+
+Having trouble getting access? <img src="./GitPitch Desktop_files/giphy(9).gif" height="150"> 
+
+<p>Sign up for an <a href="https://portal.xsede.org/" rel="noopener noreferrer" target="_blank">XSEDE Portal Account</a></p>
+
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="future"><p>Acknowledgements</p>
+<p>All images shown in this presentation are in the public domain or are property of their credited creators. The web address of each image is visible in the presentation at: <a href="https://github.com/tyson-swetnam/2020-01-11-PAG/" rel="noopener noreferrer" target="_blank">https://github.com/tyson-swetnam/2020-01-11-PAG/</a></p>
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" data-background="linear-gradient(80deg, black, #567AD2)" hidden="" aria-hidden="true" class="future"><!-- -->
+<p>CyVerse is funded entirely by the National Science Foundation under Award Numbers <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0735191" rel="noopener noreferrer" target="_blank">DBI-0735191</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1265383" rel="noopener noreferrer" target="_blank">DBI-1265383</a>, and <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1743442&amp;HistoricalAwards=false" rel="noopener noreferrer" target="_blank">DBI-1743442</a>.</p>
+<div class="south span-45">
+
+<a href="https://www.arizona.edu/" rel="noopener noreferrer" target="_blank"><img class="span-50" src="./GitPitch Desktop_files/ua_stack_rgb_4.png"></a>
+
+</div>
+
+<div class="north span-33">
+
+<a href="https://www.nsf.gov/" rel="noopener noreferrer" target="_blank"><img class="span-50" src="./GitPitch Desktop_files/NSF_4-Color_bitmap_Logo.png"></a>
+
+</div>
+
+<div class="south-west span-33">
+
+<a href="https://www.tacc.utexas.edu/" rel="noopener noreferrer" target="_blank"><img class="" src="./GitPitch Desktop_files/tacc.png"></a>
+
+</div>
+
+<div class="south-east span-33">
+
+<a href="https://www.cshl.edu/" rel="noopener noreferrer" target="_blank"><img class="span-100" src="./GitPitch Desktop_files/cshl_logo_alternate-RGB_KO.png"></a>
+
+</div>
+
+</section><section data-charset="utf-8" style="top: 350px; display: none;" data-markdown="" data-markdown-parsed="true" hidden="" aria-hidden="true" class="future"></section>
+            
+        </div>
+        
+
+<footer id="title-footer" class="footer-visible"><p id="notification" class="footer-fade">CyVerse - <a href="https://cyverse.org/">Learn More</a></p></footer>
+
+
+    <div class="backgrounds"><div class="slide-background past" data-background-hash=" 98% 98%https://www.greeklegendsandmyths.com/uploads/5/3/1/3/53133595/manuel-samaniego-y-jaramillo-air-juno-orders-aeolus-to-release-the-winds-1800_orig.jpgnullnullnull centerfadenull" data-background-size="98% 98%" data-background-transition="fade" style="display: none;"><div class="slide-background-content" style="background-size: 98% 98%; background-position: center center;"></div></div><div class="slide-background past" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" data-background-hash="linear-gradient(80deg, white 10%, black)nullnullnullnullnullnullnullnullnull" data-loaded="true" style="background: linear-gradient(80deg, white 10%, black); display: block;"><div class="slide-background-content"></div></div><div class="slide-background past" data-background-hash="linear-gradient(80deg, white 10%, black)nullnullnullnullnullnullnullnullnull" data-loaded="true" style="background: linear-gradient(80deg, white 10%, black); display: block;"><div class="slide-background-content"></div></div><div class="slide-background present" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" data-loaded="true" style="background: linear-gradient(80deg, black 10%, gray); display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" data-loaded="true" style="background: linear-gradient(80deg, black 10%, gray); display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" data-loaded="true" style="background: linear-gradient(80deg, black 10%, gray); display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, white 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, white 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, white 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, white 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, white 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, white 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, gray 10%, black)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, gray 10%, black); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash=" 98% 98%http://localhost:9000/pitchme/cdn/desktop/gitpitch/desktop/master/assets/imagery/agisoft_network.pngnullnullnull centerfadenull" data-background-size="98% 98%" data-background-transition="fade" style="display: none;"><div class="slide-background-content" style="background-size: 98% 98%; background-position: center center;"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, white 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, white 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash=" 98% 98%http://localhost:9000/pitchme/cdn/desktop/gitpitch/desktop/master//assets/imagery/gillan_etal.pngnullnullnull centerfadenull" data-background-size="98% 98%" data-background-transition="fade" style="display: none;"><div class="slide-background-content" style="background-size: 98% 98%; background-position: center center;"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black 10%, gray)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black 10%, gray); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, gray 10%, black)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, gray 10%, black); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, gray 10%, black)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, gray 10%, black); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="linear-gradient(80deg, black, #567AD2)nullnullnullnullnullnullnullnullnull" style="background: linear-gradient(80deg, black, rgb(86, 122, 210)); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="progress" style="display: block;"><span style="width: 252px;"></span></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"><div class="controls-arrow"></div></button><button class="navigate-right enabled highlight" aria-label="next slide"><div class="controls-arrow"></div></button><button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button><button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="slide-number" style="display: block;"><a href="http://localhost:9000/gitpitch/desktop#/6"><span class="slide-number-a">7</span><span class="slide-number-delimiter">/</span><span class="slide-number-b">33</span></a></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Emergent Challenges for Science sUAS Data Management: Fairness through Community Engagement and Best Practices Development
+
+Wyngaard et al. Remote Sens. 2019, 11(15), 1797; https://doi.org/10.3390/rs11151797
+
+
+
+
+</div></div>
+    
+    
+    <div class="gp-menu"><nav class="slide-menu slide-menu--left"><ol class="slide-menu-toolbar"><li data-button="0" class="toolbar-panel-button" data-panel="Slides"><i class="fa fa-list"></i></li><li id="close"><i class="fa fa-times"></i></li></ol><div data-panel="Slides" class="slide-menu-panel active-menu-panel"><div class="toc-title"><div class="pitch-menu-logo"></div><p style="color: white; padding: 20px 0 10px 0;"> GitPitch Desktop Presents</p><hr class="fade-away"></div><ul class="slide-menu-items"><li class="slide-menu-item no-title past" data-item="0" data-slide-h="0" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 0</span></li><li class="slide-menu-item no-title past" data-item="1" data-slide-h="1" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 1</span></li><li class="slide-menu-item no-title past" data-item="2" data-slide-h="2" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 2</span></li><li class="slide-menu-item no-title past" data-item="3" data-slide-h="3" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 3</span></li><li class="slide-menu-item no-title past" data-item="4" data-slide-h="4" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 4</span></li><li class="slide-menu-item no-title past" data-item="5" data-slide-h="5" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 5</span></li><li class="slide-menu-item no-title active" data-item="6" data-slide-h="6" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 6</span></li><li class="slide-menu-item no-title future" data-item="7" data-slide-h="7" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 7</span></li><li class="slide-menu-item no-title future" data-item="8" data-slide-h="8" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 8</span></li><li class="slide-menu-item no-title future" data-item="9" data-slide-h="9" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 9</span></li><li class="slide-menu-item no-title future" data-item="10" data-slide-h="10" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 10</span></li><li class="slide-menu-item no-title future" data-item="11" data-slide-h="11" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 11</span></li><li class="slide-menu-item no-title future" data-item="12" data-slide-h="12" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 12</span></li><li class="slide-menu-item no-title future" data-item="13" data-slide-h="13" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 13</span></li><li class="slide-menu-item future" data-item="14" data-slide-h="14" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">  a recent informal survey of community members</span></li><li class="slide-menu-item no-title future" data-item="15" data-slide-h="15" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 15</span></li><li class="slide-menu-item no-title future" data-item="16" data-slide-h="16" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 16</span></li><li class="slide-menu-item no-title future" data-item="17" data-slide-h="17" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 17</span></li><li class="slide-menu-item no-title future" data-item="18" data-slide-h="18" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 18</span></li><li class="slide-menu-item no-title future" data-item="19" data-slide-h="19" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 19</span></li><li class="slide-menu-item no-title future" data-item="20" data-slide-h="20" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 20</span></li><li class="slide-menu-item no-title future" data-item="21" data-slide-h="21" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 21</span></li><li class="slide-menu-item no-title future" data-item="22" data-slide-h="22" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 22</span></li><li class="slide-menu-item future" data-item="23" data-slide-h="23" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Publishing your Data</span></li><li class="slide-menu-item no-title future" data-item="24" data-slide-h="24" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 24</span></li><li class="slide-menu-item no-title future" data-item="25" data-slide-h="25" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 25</span></li><li class="slide-menu-item no-title future" data-item="26" data-slide-h="26" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 26</span></li><li class="slide-menu-item no-title future" data-item="27" data-slide-h="27" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 27</span></li><li class="slide-menu-item no-title future" data-item="28" data-slide-h="28" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 28</span></li><li class="slide-menu-item no-title future" data-item="29" data-slide-h="29" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 29</span></li><li class="slide-menu-item no-title future" data-item="30" data-slide-h="30" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 30</span></li><li class="slide-menu-item no-title future" data-item="31" data-slide-h="31" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 31</span></li><li class="slide-menu-item no-title future" data-item="32" data-slide-h="32" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 32</span></li></ul></div></nav><div class="slide-menu-overlay"></div><div class="slide-menu-button"><a class="reveal" href="http://localhost:9000/gitpitch/desktop#"><i class="gp-menu-bars fa fa-bars"></i></a></div></div>
+    
+    
+
+    <script src="./GitPitch Desktop_files/reveal.js"></script>
+    <script src="./GitPitch Desktop_files/jquery.min.js"></script>
+    
+    <script src="./GitPitch Desktop_files/asciinema-player.js"></script>
+    
+
+    
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            controlsLayout: 'bottom-right',
+            embedded: true,
+            margin: 0.0,
+            showNotes: false,
+            transition: 'fade',
+            backgroundTransition: 'fade',
+            autoSlide: 0,
+            loop: false,
+            center: true,
+            rtl: false,
+            shuffle: false,
+            mouseWheel: false,
+            
+            controlsTutorial: true,
+            
+            slideNumber: 'c/t', // slideNumber: false,
+            history: true,
+            
+            
+            menu: {
+              custom: [],
+              path : "/assets/libs/reveal.js/3.8.0/plugin/menu",
+              themes : false,
+              transitions:  false,
+              markers: true,
+              sticky: true,
+              autoOpen: true
+            },
+            
+            
+            dependencies: [
+                { src: "/assets/libs/reveal.js/3.8.0/plugin/markdown/marked.js",
+                  condition: function() {
+                    return !!document.querySelector( '[data-markdown]' );
+                  }},
+                { src: "/assets/libs/reveal.js/3.8.0/plugin/markdown/markdown.js",
+                condition: function() {
+                  return !!document.querySelector( '[data-markdown]' );
+                }},
+                
+                { src:"/assets/libs/reveal.js/3.8.0/plugin/menu/menu-mod.js",
+                  async: true},
+                
+                
+                { src: "/assets/libs/reveal.js/3.8.0/plugin/chart/Chart.min.js"},
+                { src: "/assets/libs/reveal.js/3.8.0/plugin/chart/csv2chart.js"},
+                
+                
+                { src: "/assets/libs/reveal.js/3.8.0/plugin/notes/notes.js",
+                  async: true },
+                
+                
+                { src: '/assets/libs/highlight.js/9.15.8/highlight.js', async: true },
+                { src: '/assets/libs/highlight.js/9.15.8/reveal-code-focus-0619-mod.js',
+                  async: true,
+                  callback: function() {
+                    RevealCodeFocus();
+                  }
+                },
+                
+                { src: "/assets/libs/js/twitter-embed-widgets.js", async: true },
+                
+                
+            ]
+        });
+
+        Reveal.addEventListener('ready', function(evt) {
+
+          if(typeof twtter !== "undefined") {
+              twttr.widgets.load();
+          }
+
+          upgradeAnchors();
+
+          if (evt.indexh === 0 && evt.indexv === 0) {
+            pushHelpNotification();
+          } else {
+            pushFootnoteNotification();
+          }
+
+          // Force refresh to workaround Reveal.js 3.8.0
+          // first render problem re. scrollHeight calc
+          // for slides with non-text (image) content.
+          setTimeout(Reveal.layout, 500);
+        });
+
+        Reveal.addEventListener('menu-ready', function(evt) {
+            manageMenuPolicy();
+        });
+
+        Reveal.addEventListener('slidechanged', function(evt) {
+          if (evt.indexh === 0 && evt.indexv === 0) {
+            pushHelpNotification();
+          } else {
+            pushFootnoteNotification();
+          }
+        });
+
+        Reveal.configure({
+            keyboard: {
+                88: function() { // bind "x" key to "select" code block content
+
+                    var currentSlide = Reveal.getCurrentSlide();
+                    var preBlock = $(currentSlide).find("pre");
+
+                    if(preBlock.length > 0) {
+
+                        if (window.getSelection) {
+                            var range = document.createRange();
+                            range.selectNodeContents(preBlock[0]);
+                            var selection = window.getSelection();
+                            selection.removeAllRanges();
+                            selection.addRange(range);
+                        }
+                    }
+                }
+            }
+        });
+
+        function enterFullscreen() {
+            Reveal.triggerKey(70);
+        };
+
+        function enterOverview() {
+            Reveal.toggleOverview();
+        };
+
+        function enterBlackout() {
+            Reveal.togglePause();
+        };
+
+        function enterHelp() {
+          Reveal.toggleHelp();
+        }
+
+        function enableEvents() {
+            Reveal.addEventListeners();
+        };
+
+        function disableEvents() {
+            Reveal.removeEventListeners();
+        };
+
+        function manageMenuPolicy() {
+            if(RevealMenu && RevealMenu.isOpen()) {
+                RevealMenu.toggle();
+            }
+        }
+
+        function upgradeAnchors() {
+            Array.from(document.getElementsByTagName('a')).forEach($link => {
+              if ($link.hostname !== window.location.hostname) {
+                $link.setAttribute('rel', 'noopener noreferrer');
+                $link.setAttribute('target', '_blank');
+              }
+            });
+        }
+
+    </script>
+
+    
+    <script>
+        Reveal.configure({
+            keyboard: { 68: generators }
+        });
+        function generators() {
+            window.location.href =
+                "/gitpitch/desktop/generators" + document.location.search;
+        }
+    </script>
+
+    
+
+<script>
+    function pushNotification(msg, fade) {
+      var footer = document.getElementById('title-footer')
+      var notification = document.getElementById('notification')
+      if(window.innerWidth < 700) {
+        footer.className = "footer-hidden";
+      } else {
+          footer.className = "footer-visible";
+          if(fade) {
+            notification.className = "footer-fade";
+            notification.innerHTML = msg;
+          } else {
+            notification.className = "footer-hard";
+            notification.innerHTML = msg;
+          }
+      }
+    };
+
+    function pushFootnoteNotification() {
+      
+        pushNotification("CyVerse - <a href='https://cyverse.org'>Learn More</a>", true);
+      
+    }
+
+    
+      function pushHelpNotification() {
+        pushFootnoteNotification();
+      }
+    
+
+    function pushCodePresentingStepNotification(step, frags) {
+      pushNotification("Code Presenting - Step " + step + " / " + frags, true);
+    }
+</script>
+
+
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./GitPitch Desktop_files/widget_iframe.68dbfddc56b3f0522044700c1abcd1dc.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./GitPitch Desktop_files/saved_resource(5).html"></iframe></body></html>
