@@ -103,6 +103,11 @@ Taking science to the edge
 
 ---?color=linear-gradient(80deg, gray 50%, white)
 
+@snap[east span-33 text-white font-montserrat]
+@fa[quote-left quote-graphql](Why interoperability and federation?)
+<img src="https://polomania.hu/images/designs/tn_orig/PM01180/12639.png" height="100">
+@snapend
+
 @snap[north span-100 font-montserrat text-10 text-bold text-yellow]
 <img src="https://qubeshub.org/app/site/media/images/partners/NEON_288.png" height="100"> <img src="https://www.logosurfer.com/wp-content/uploads/2018/03/battelle-logo_0.png" height="100">
 @snapend
@@ -115,8 +120,11 @@ Taking science to the edge
 <img src="/assets/imagery/neon2.png" height="400">
 @snapend
 
-@snap[east span-33 fragment text-montserrat text-06 text-black]
+@snap[south-west span-50 text-montserrat text-06 text-black]
 Extending ecological observations with UAS 
+@snapend
+
+@snap[south-east span-50  fragment text-montserrat text-06 text-black]
 @ul
 - supplement the Airborne Observation Platform
 - target of opportunity measurement (hot spots & hot moments)
@@ -318,6 +326,10 @@ voluntary online survey mid-2019 (n=33)
 
 ---?color=linear-gradient(80deg, black 10%, gray)
 
+# Concern: Processing
+
+---?color=linear-gradient(80deg, black 10%, gray)
+
 @snap[north-west span-33]
 <img src="https://i.imgur.com/etrjhje.jpg" width="350">
 @snapend
@@ -483,6 +495,10 @@ node = $4.35 / hr
 
 ---?color=linear-gradient(80deg, black 10%, gray)
 
+# Concern: Data Publishing
+
+---?color=linear-gradient(80deg, black 10%, gray)
+
 @snap[north span-100 font-montserrat] 
 Data Management Lifecycle
 @uml[](/src/uml/datamanagement.puml)
@@ -540,19 +556,8 @@ Are your data public (yet)?
 3% No - we aren't going to
 @snapend
 
----?color=linear-gradient(80deg, black 10%, gray)
-
-## Publishing your Data
-
 ---?image=/assets/imagery/gillan_etal.png
 
----?color=linear-gradient(80deg, black 10%, gray)
-
-Bring your research to CyVerse
-
----
-
-Calliope Slides
 
 ---?color=linear-gradient(80deg, black 10%, gray)
 

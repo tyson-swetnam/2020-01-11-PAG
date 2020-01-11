@@ -1,4 +1,5 @@
 background-size: cover
+logo: assets/imagery/cyverse_globe_white.png
 
 transition: fade
 background-size : "98% 98%"
