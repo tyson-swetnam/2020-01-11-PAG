@@ -4,7 +4,7 @@ Talk given at 2020 Plant &amp; Animal Genome meeting
 
 # The Airborne Environmental Observations Laboratory for Unoccupied Systems (AEOLUS)
 
-Start presentation: [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/tyson-swetnam/2020-01-11-PAG/master) 
+Start presentation: [![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/tyson-swetnam/2020-01-11-PAG/main) 
 
 ## Date: 2020-01-11
 ## Location: [PAG](https://www.intlpag.org/2020/), San Diego, CA
